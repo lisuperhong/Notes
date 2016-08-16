@@ -96,3 +96,5 @@
 - 内部类方法可以访问创建它的外围类对象的数据域，包括私有的数据
 - 内部类可以对同一个包中的其他类隐藏起来
 - 当想要定义一个回调函数而且不想编写大量代码时，使用匿名内部类比较便捷
+
+32.集合类的基本接口是Collection，除了以Map结尾的类外（实现了Map接口），其他常见集合类都实现了该接口，该接口扩展了Interable接口，所以对于标准类库中的任何集合都可以使用"for each"循环，元素被访问的顺序取决于集合类型。Vector类的所有方法都是同步的，可以由两个线程安全地访问一个Vetcor对象，如果由一个线程访问Vector,代码要在同步操作上耗费大量的时间，ArrayList是不同步的。集合包是Java中最常用的包，它最常用的有Collection和Map两个接口的实现类，Collection用于存放多个单对象，Map用于存放Key-Value形式的键值对。Collection中常用的又分为两种类型的接口：List和Set，两者最明显的差别为List支持放入重复的对象，而Set不支持。List接口常用的实现类有：ArrayList，LinkedList，Vector和Stack；Set接口常用的实现有HashSet（无序）,TreeSet（有序，红黑树实现）。而Map的常用实现有TreeMap（有序）、HashMap（无序）、WeakHashMap
